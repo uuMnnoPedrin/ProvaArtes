@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --cor1_logo:rgba(59, 51, 145,1);
+    --cor2_logo:rgba(116, 63, 150,1);
+    --cor1_menus:rgba(140, 126, 255,1);
+    --cor2_menus:rgba(92, 90, 183,1);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#bg-pag1{
+    background-color: var(--cor2_logo);
+}
+
+#bg-pag2{
+    background-color: var(--cor1_logo);
+}
+
+li, a, button{ /* aplica a formatação nos 3 elementos presentes na nav */
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor1_logo);
+}
+header{
+    background-color: var(--cor1_menus);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+}
+header img{
+    height: 11%;
+    width: 11%;
+}
+
+.nav_links{
+    list-style: none; /* remove as bolinhas da lista */
+}
+
+.nav_links li{
+    display: inline-block; /* deixa uma do lado da outra */
+    padding: 0px 20px; /* adiciona um espaçamento entre elas */
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: white;
+}
+
+button{
+    font-weight: 500;
+    color: white;
+    padding: 9px 25px;
+    background-color: rgba(14,17,23,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(14,17,23,0.8);
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main div{
+    margin-top: 90px;
+    display: inline-block;
+    width: fit-content;
+}
+
+.text{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: white;
+    width: 197px;
+    height: 600px;
+}
+
+#title{
+    color: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+footer{
+    background-color: var(--cor1_menus);
+    width: 100%;
+    height: 9%;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+}
+
+#copyright{
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor1_logo);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 36px;
+}
